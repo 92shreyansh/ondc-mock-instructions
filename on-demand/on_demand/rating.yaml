@@ -4,4 +4,4 @@ default:
     $ref: "./operations/req_body.yaml#/bap_uri"
   delay: 300
   payload:
-    $ref: "./payloads/on_rating.yaml"
+    $ref: "./template/on_rating.yaml"

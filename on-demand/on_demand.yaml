@@ -1,5 +1,5 @@
 server:
-  type: BPP # information purpose only
+  type: BPP 
   port: 5500 
   sync_mode: true
 security:
@@ -69,28 +69,49 @@ path:
       $ref: "./schema/rating.json"
     callbacks:
       $ref: "./on_demand/rating.yaml"
-  # update:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/update.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_update.yaml"
-  # track:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/track.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_track.yaml"
-  # support:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/support.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_support.yaml"
-  # rating:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/rating.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_raiting.yaml"
-  # cancel:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/cancel.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_cancel.yaml"
+  on_search:
+    schema:
+      $ref: "./schema/on_search.json"
+    callbacks:
+      $ref: "./on_demand/on_search.yaml"
+  on_select:
+    schema:
+      $ref: "./schema/on_select.json"
+    callbacks:
+      $ref: "./on_demand/on_select.yaml"
+  on_init:
+    schema:
+      $ref: "./schema/on_init.json"
+    callbacks:
+      $ref: "./on_demand/on_init.yaml"
+  on_confirm:
+    schema:
+      $ref: "./schema/on_confirm.json"
+    callbacks:
+      $ref: 
+  on_status:
+    schema:
+      $ref: "./schema/on_status.json"
+    callbacks:
+      $ref: 
+  on_update:
+    schema:
+      $ref: "./schema/on_update.json"
+    callbacks:
+      $ref: 
+  on_track:
+    schema:
+      $ref: "./schema/on_track.json"
+    callbacks:
+      $ref: 
+  on_support:
+    schema:
+      $ref: "./schema/on_support.json"
+    callbacks:
+      $ref: 
+  on_rating:
+    schema:
+      $ref: "./schema/on_rating.json"
+    callbacks:
+      $ref: 
+ 
