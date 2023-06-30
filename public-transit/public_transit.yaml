@@ -22,27 +22,27 @@ path:
         payload:
           template:
             data:
-              $ref: "./on_demand/payloads/search.yaml"
+              $ref: "./public_transit/payloads/search.yaml"
   search:
     schema:
       $ref: "./schema/search.json"
     callbacks:
-      $ref: "./on_demand/search.yaml"
+      $ref: "./public_transit/search.yaml"
   select:
     schema:
       $ref: "./schema/select.json"
     callbacks:
-      $ref: "./on_demand/select.yaml"
+      $ref: "./public_transit/select.yaml"
   init:
     schema:
       $ref: "./schema/init.json"
     callbacks:
-      $ref: "./on_demand/init.yaml"
+      $ref: "./public_transit/init.yaml"
   confirm:
     schema:
       $ref: "./schema/confirm.json"
     callbacks:
-      $ref: "./on_demand/confirm.yaml"
+      $ref: "./public_transit/confirm.yaml"
   # update:
   #   schema:
   #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/update.json"
