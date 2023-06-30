@@ -1,4 +1,4 @@
-summary: Return confirmed order with latest fulfillment details
+summary: Return order with status - Driver at pickup
 value:
   context:
     country: IND
@@ -11,7 +11,7 @@ value:
     message_id: ++msg_id++
     city: ++city_code++
     core_version: 1.0.0
-    action: on_confirm
+    action: on_status
     bap_uri: ++bap_uri++
   message:
     order:
@@ -96,8 +96,8 @@ value:
         id: fulf_5cf064d5-4c0a-42d3-b73d-5f19a6f7468e
         state:
           descriptor:
-            code: DRIVER_EN_ROUTE
-            name: Driver is on the way
+            code: DRIVER_AT_PICKUP
+            name: Driver Arrived at Pickup Location
         start:
           authorization:
             type: OTP
