@@ -1,0 +1,25 @@
+summary: Initialize the order by providing billing details
+value:
+  context:
+    domain: ONDC:TRV10
+    country: IND
+    city: ++city_code++
+    action: init
+    core_version: 1.0.0
+    bap_id: https://example-bap.com
+    bap_uri: ++bap_uri++
+    bpp_id: https://kmrl-bpp.com
+    bpp_uri: ++bpp_uri++
+    transaction_id: ++txn_id++
+    message_id: ++msg_id++
+    timestamp: ++timestamp++
+  message:
+    order:
+      items:
+        - id: '1'
+      provider:
+        id: '1'
+      billing:
+        name: John Doe
+        email: john.doe@example.com
+        phone: +91-9897867564
