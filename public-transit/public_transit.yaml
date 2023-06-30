@@ -49,11 +49,6 @@ path:
       $ref: "./schema/status.json"
     callbacks:
       $ref: "./public_transit/status.yaml"
-  update:
-    schema:
-      $ref: "./schema/update.json"
-    callbacks:
-      $ref: "./public_transit/update.yaml"
   support:
     schema:
       $ref: "./schema/support.json"
