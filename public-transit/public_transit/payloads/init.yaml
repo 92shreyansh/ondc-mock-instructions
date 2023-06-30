@@ -1,6 +1,4 @@
-summary: Initialize the order by providing billing details
-value:
-  context:
+context:
     domain: ONDC:TRV10
     country: IND
     city: ++city_code++
@@ -13,7 +11,7 @@ value:
     transaction_id: ++txn_id++
     message_id: ++msg_id++
     timestamp: ++timestamp++
-  message:
+message:
     order:
       items:
         - id: '1'

@@ -1,6 +1,4 @@
-summary: Return order with status - Driver at pickup
-value:
-  context:
+context:
     country: IND
     bpp_uri: ++bpp_uri++
     domain: ONDC:TRV10
@@ -13,7 +11,7 @@ value:
     core_version: 1.0.0
     action: on_status
     bap_uri: ++bap_uri++
-  message:
+message:
     order:
       id: 7751bd26-3fdc-47ca-9b64-e998dc5abe68
       provider:
