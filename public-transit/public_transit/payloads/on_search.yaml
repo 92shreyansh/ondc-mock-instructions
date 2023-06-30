@@ -20,7 +20,7 @@ value:
         images:
           - https://transitsolutions.in/logos/logo.ico
       bpp/providers:
-        - id: ++item_id++
+        - id: "1"
           descriptor:
             name: Delhi Metro Rail Limited
             images:
@@ -130,14 +130,14 @@ value:
                 location:
                   descriptor:
                     name: Dwarka Sector 21
-                  gps: ++start_gps++
+                  gps: 9.05,12.06
                 time:
                   timestamp: "2021-10-15T00:32:19.000Z"
               end:
                 location:
                   descriptor:
                     name: Shivaji Stadium
-                  gps: ++end_gps++
+                  gps: 9.07,12.07
                 time:
                   timestamp: "2021-10-15T00:43:21.000Z"
               vehicle:
