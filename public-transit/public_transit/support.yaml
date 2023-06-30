@@ -1,7 +1,7 @@
 default:
-  callback: on_confirm
+  callback: on_support
   uri:
     $ref: "./operations/req_body.yaml#/bap_uri"
   delay: 300
   payload:
-    $ref: "./template/on_confirm.yaml"
+    $ref: "./template/on_support.yaml"
