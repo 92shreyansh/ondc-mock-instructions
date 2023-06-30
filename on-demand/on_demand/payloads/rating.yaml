@@ -1,6 +1,4 @@
-summary: Provide a rating
-value:
-  context:
+context:
     country: IND
     bpp_uri: ++bpp_uri++
     domain: ONDC:TRV10
@@ -13,7 +11,7 @@ value:
     core_version: 1.0.0
     action: rating
     bap_uri: ++bap_uri++
-  message:
+message:
     id: b0462745-f6c9-4100-bbe7-4fa3648b6b40
     rating_category: DRIVER
     value: 4

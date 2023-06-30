@@ -1,6 +1,4 @@
-summary: Initialize draft order and request for terms of service
-value:
-  context:
+context:
     action: init
     bap_id: https://example-bap.com
     bap_uri: ++bap_uri++
@@ -13,7 +11,7 @@ value:
     message_id: ++msg_id++
     timestamp: ++timestamp++
     transaction_id: ++txn_id++
-  message:
+message:
     order:
       fulfillment:
         customer:

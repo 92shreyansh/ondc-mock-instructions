@@ -1,6 +1,4 @@
-summary: Return a quote offered by a provider
-value:
-  context:
+context:
     country: IND
     bpp_uri: ++bpp_uri++
     domain: ONDC:TRV10
@@ -13,7 +11,7 @@ value:
     core_version: 1.0.0
     action: on_select
     bap_uri: ++bap_uri++
-  message:
+message:
     order:
       provider:
         id: e8542642-0f4a-454c-9a9f-f46110c367a3

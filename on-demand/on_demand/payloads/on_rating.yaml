@@ -1,6 +1,4 @@
-summary: Return acknowledgement of rating and feedback
-value:
-  context:
+context:
     country: IND
     bpp_uri: ++bpp_uri++
     domain: ONDC:TRV10
@@ -14,6 +12,6 @@ value:
     action: on_rating
     bap_uri: ++bap_uri++
     transaction_id: ++txn_id++
-  message:
+message:
     feedback_ack: true
     rating_ack: true

@@ -1,6 +1,4 @@
-summary: Return updated order with payment transaction status
-value:
-  context:
+context:
     country: IND
     bpp_uri: ++bpp_uri++
     domain: ONDC:TRV10
@@ -13,7 +11,7 @@ value:
     core_version: 1.0.0
     action: on_confirm
     bap_uri: ++bap_uri++
-  message:
+message:
     update_target: order.payment
     order:
       id: ABC1234

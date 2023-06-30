@@ -1,6 +1,4 @@
-summary: Search for services in the city of Bengaluru by pickup and drop location
-value:
-  context:
+context:
     country: IND
     domain: ONDC:TRV10
     timestamp: ++timestamp++
@@ -11,7 +9,7 @@ value:
     core_version: 1.0.0
     action: search
     bap_uri: ++bap_uri++
-  message:
+message:
     intent:
       fulfillment:
         start:

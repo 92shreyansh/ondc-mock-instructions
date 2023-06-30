@@ -1,6 +1,4 @@
-summary: Track an active ride
-value:
-  context:
+context:
     country: IND
     bpp_uri: ++bpp_uri++
     domain: ONDC:TRV10
@@ -13,5 +11,5 @@ value:
     core_version: 1.0.0
     action: track
     bap_uri: ++bap_uri++
-  message:
+message:
     order_id: 22e090fc-b8b1-4437-9126-ff7a71c7845c
