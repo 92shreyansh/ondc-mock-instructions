@@ -18,7 +18,7 @@ path:
         payload:
           template:
             data:
-              $ref: "./registy/lookup_res.yaml"
+              $ref: "./registry/lookup_res.yaml"
   health:
     schema:
       type: object
@@ -27,5 +27,5 @@ path:
         payload:
           template:
             data:
-              $ref: "./registy/health.yaml"
+              $ref: "./registry/health.yaml"
 

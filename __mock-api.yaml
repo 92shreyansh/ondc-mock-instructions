@@ -7,7 +7,7 @@ log:
   output_type: file
   out_file: log_file.log
 path:
-  search:
+  on_search:
     schemas:
       $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/search.json"
     default:
@@ -33,8 +33,8 @@ path:
                     - position 2
               value: <if harcoded value>
     scenario_1:
-      callback: on_search
-      delay: 300
+      callback: select
+      delay: 500
       condition: #<contition to check>
         operation:
           type: EQUAL
