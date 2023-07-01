@@ -1,13 +1,14 @@
 server:
-  type: BPP # informaction purouse only
+  type: BPP 
   port: 5500 
   sync_mode: true
 security:
-  verify_sign: true
+  verify_sign: false
   lookup_uri: "http://localhost:3000/lookup"
   generate_sign: true
   subscriber_id: mock-api-service
   ukId: 584
+  publickey: 5RF/CSTd5Cksh7xKNE/vr9IlwrV9LT1ZPR8RDeOpWjs=
   privatekey: dYo7zgyKYYoGQiVa45qfTQ94ic0bXPjN5KiUMVX0NBHlEX8JJN3kKSyHvEo0T++v0iXCtX0tPVk9HxEN46laOw==
 log:
   level: DEBUG
@@ -22,54 +23,90 @@ path:
         payload:
           template:
             data:
-              $ref: "./on_demand/payloads/search.yaml"
+              $ref: "./public_transit/search.yaml"
   search:
     schema:
       $ref: "./schema/search.json"
     callbacks:
-      $ref: "./on_demand/search.yaml"
+      $ref: "./public_transit/search.yaml"
   select:
     schema:
       $ref: "./schema/select.json"
     callbacks:
-      $ref: "./on_demand/select.yaml"
+      $ref: "./public_transit/select.yaml"
   init:
     schema:
       $ref: "./schema/init.json"
     callbacks:
-      $ref: "./on_demand/init.yaml"
+      $ref: "./public_transit/init.yaml"
   confirm:
     schema:
       $ref: "./schema/confirm.json"
     callbacks:
-      $ref: "./on_demand/confirm.yaml"
-  # update:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/update.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_update.yaml"
-  # track:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/track.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_track.yaml"
-  # support:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/support.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_support.yaml"
-  # status:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/status.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_status.yaml"
-  # rating:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/rating.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_raiting.yaml"
-  # cancel:
-  #   schema:
-  #     $ref: "https://raw.githubusercontent.com/abhinavv245/Json-store/main/schemas/Retail/cancel.json"
-  #   callbacks:
-  #     $ref: "./callbacks/on_cancel.yaml"
+      $ref: "./public_transit/confirm.yaml"
+  status:
+    schema:
+      $ref: "./schema/status.json"
+    callbacks:
+      $ref: "./public_transit/status.yaml"
+  support:
+    schema:
+      $ref: "./schema/support.json"
+    callbacks:
+      $ref: "./public_transit/support.yaml"
+  track:
+    schema:
+      $ref: "./schema/track.json"
+    callbacks:
+      $ref: "./public_transit/track.yaml"
+  rating:
+    schema:
+      $ref: "./schema/rating.json"
+    callbacks:
+      $ref: "./public_transit/rating.yaml"
+  on_search:
+    schema:
+      $ref: "./schema/on_search.json"
+    callbacks:
+      $ref: "./public_transit/on_search.yaml"
+  on_select:
+    schema:
+      $ref: "./schema/on_select.json"
+    callbacks:
+      $ref: "./public_transit/on_select.yaml"
+  on_init:
+    schema:
+      $ref: "./schema/on_init.json"
+    callbacks:
+      $ref: "./public_transit/on_init.yaml"
+  on_confirm:
+    schema:
+      $ref: "./schema/on_confirm.json"
+    callbacks:
+      $ref: 
+  on_status:
+    schema:
+      $ref: "./schema/on_status.json"
+    callbacks:
+      $ref: 
+  on_update:
+    schema:
+      $ref: "./schema/on_update.json"
+    callbacks:
+      $ref: 
+  on_track:
+    schema:
+      $ref: "./schema/on_track.json"
+    callbacks:
+      $ref: 
+  on_support:
+    schema:
+      $ref: "./schema/on_support.json"
+    callbacks:
+      $ref: 
+  on_rating:
+    schema:
+      $ref: "./schema/on_rating.json"
+    callbacks:
+      $ref: 
+ 
